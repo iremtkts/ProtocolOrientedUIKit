@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol UserViewModelOutput {
+protocol UserViewModelOutput : AnyObject{
     func updateView(name: String, email: String, userName: String)
 }
