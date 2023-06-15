@@ -7,7 +7,7 @@
 
 import Foundation
 
-class APIManager {
+class APIManager: UserService{
     
     
     func fetchUser (completion: @escaping(Result<User,Error>) -> Void) {

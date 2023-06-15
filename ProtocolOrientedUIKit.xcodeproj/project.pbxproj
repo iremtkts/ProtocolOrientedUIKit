@@ -19,6 +19,7 @@
 		0D6ABAA02A2A7651002FB127 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ABA9F2A2A7651002FB127 /* APIManager.swift */; };
 		0D6ABAA32A2A77CD002FB127 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ABAA22A2A77CD002FB127 /* UserViewModel.swift */; };
 		0D6ABAA52A2A7955002FB127 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6ABAA42A2A7955002FB127 /* UserService.swift */; };
+		0D71F2672A3B94E800DDC4F3 /* UserViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71F2662A3B94E800DDC4F3 /* UserViewModelOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0D6ABA9F2A2A7651002FB127 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0D6ABAA22A2A77CD002FB127 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0D6ABAA42A2A7955002FB127 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		0D71F2662A3B94E800DDC4F3 /* UserViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6ABAA22A2A77CD002FB127 /* UserViewModel.swift */,
+				0D71F2662A3B94E800DDC4F3 /* UserViewModelOutput.swift */,
 			);
 			path = UserViewModel;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D71F2672A3B94E800DDC4F3 /* UserViewModelOutput.swift in Sources */,
 				0D6ABAA52A2A7955002FB127 /* UserService.swift in Sources */,
 				0D6ABA9C2A2A7612002FB127 /* User.swift in Sources */,
 				0D6ABAA32A2A77CD002FB127 /* UserViewModel.swift in Sources */,
