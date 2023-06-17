@@ -7,7 +7,15 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+class UserViewController: UIViewController, UserViewModelOutput {
+    func updateView(name: String, email: String, userName: String) {
+        self.nameLabel.text = name
+        self.emailLabel.text = email
+        self.usernameLabel.text = userName
+    }
+    
+    private let viewModel: UserViewModel
+    
     
     private let nameLabel: UILabel = {
         let label = UILabel()
@@ -29,10 +37,20 @@ class UserViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
+    
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel.output = self
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        viewModel.fetchUsers()
     }
     
     private func setupViews() {
